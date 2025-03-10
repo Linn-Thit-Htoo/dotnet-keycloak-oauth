@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{0AE09D30-1B98-46BF-AE9F-EB7A908E5A61}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B645848E-B7B9-4DDA-9E15-5C78DD5653F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-keycloak-oauth.Auth", "dotnet-keycloak-oauth.Auth\dotnet-keycloak-oauth.Auth.csproj", "{1388CD63-177F-428B-8820-CEFB7C11DE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-keycloak-oauth.AppHost", "dotnet-keycloak-oauth.AppHost\dotnet-keycloak-oauth.AppHost.csproj", "{9A1121EB-CE23-4A16-9C99-E707006C0834}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1388CD63-177F-428B-8820-CEFB7C11DE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1388CD63-177F-428B-8820-CEFB7C11DE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1388CD63-177F-428B-8820-CEFB7C11DE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1388CD63-177F-428B-8820-CEFB7C11DE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1121EB-CE23-4A16-9C99-E707006C0834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1121EB-CE23-4A16-9C99-E707006C0834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1121EB-CE23-4A16-9C99-E707006C0834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1121EB-CE23-4A16-9C99-E707006C0834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1388CD63-177F-428B-8820-CEFB7C11DE5E} = {B645848E-B7B9-4DDA-9E15-5C78DD5653F3}
+		{9A1121EB-CE23-4A16-9C99-E707006C0834} = {B645848E-B7B9-4DDA-9E15-5C78DD5653F3}
+	EndGlobalSection
+EndGlobal

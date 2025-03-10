@@ -1,0 +1,6 @@
+@dotnet_keycloak_oauth.Auth_HostAddress = http://localhost:5023
+
+GET {{dotnet_keycloak_oauth.Auth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
