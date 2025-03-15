@@ -1,8 +1,4 @@
-﻿global using Microsoft.AspNetCore.Authentication.JwtBearer;
-global using Microsoft.IdentityModel.Tokens;
-global using Microsoft.OpenApi.Models;
-
-namespace dotnet_keycloak_oauth.Auth.Dependencies;
+﻿namespace dotnet_keycloak_oauth.Auth.Dependencies;
 
 public static class DependencyInjectionExtensions
 {
