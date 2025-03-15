@@ -1,7 +1,4 @@
-﻿global using Microsoft.AspNetCore.Authorization;
-global using Microsoft.AspNetCore.Mvc;
-
-namespace dotnet_keycloak_oauth.Auth.Controllers;
+﻿namespace dotnet_keycloak_oauth.Auth.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
