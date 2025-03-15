@@ -1,5 +1,3 @@
-using dotnet_keycloak_oauth.Auth.Dependencies;
-
 namespace dotnet_keycloak_oauth.Auth;
 
 public class Program
