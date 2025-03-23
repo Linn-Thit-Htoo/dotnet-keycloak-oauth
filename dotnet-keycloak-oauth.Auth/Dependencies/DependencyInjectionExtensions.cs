@@ -41,17 +41,31 @@ public static class DependencyInjectionExtensions
                     Type = SecuritySchemeType.OAuth2,
                     Flows = new OpenApiOAuthFlows
                     {
-                        Implicit = new OpenApiOAuthFlow
+                        AuthorizationCode = new OpenApiOAuthFlow
                         {
                             AuthorizationUrl = new Uri(
                                 builder.Configuration["Keycloak:AuthorizationUrl"]!
                             ),
+                            TokenUrl = new Uri(
+                                "http://localhost:18080/realms/dotnet-keycloak-oauth/protocol/openid-connect/token"
+                            ),
                             Scopes = new Dictionary<string, string>
                             {
-                                { "openid", "openid" },
-                                { "profile", "profile" }
+                                { "openid", "Access your openid information" },
+                                { "email", "Access your email" }
                             }
                         }
+                        //Implicit = new OpenApiOAuthFlow
+                        //{
+                        //    AuthorizationUrl = new Uri(
+                        //        builder.Configuration["Keycloak:AuthorizationUrl"]!
+                        //    ),
+                        //    Scopes = new Dictionary<string, string>
+                        //    {
+                        //        { "openid", "openid" },
+                        //        { "profile", "profile" }
+                        //    }
+                        //}
                     }
                 }
             );
